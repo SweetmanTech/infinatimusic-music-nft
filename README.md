@@ -1,15 +1,12 @@
-# NFT Factory
+# Infinati - Keep it Heady
 
-- `createMusicNft` use this to create a unique ERC721 smart contract.
-- Factory creates standard ERC721 contract with `public mint()` method.
+- music nft: OnChain-Music-Metadata.
+- ERC721.
+- custom smart contracts for Infinati.
 
-## Verified Factory Deployments
+## Verified Smart Contract Deployments
 
-- `Mumbai Testnet` - [0xc92b9ae552ef0638f9545d1d902ef375da1ebca3](https://mumbai.polygonscan.com/address/0xc92b9ae552ef0638f9545d1d902ef375da1ebca3#code)
-
-## Verified Implementation Deployments
-
-- `Mumbai Testnet` - [0x807d90338744A78E8Fc51F0b1b00a30cF81D016a](https://mumbai.polygonscan.com/address/0x807d90338744A78E8Fc51F0b1b00a30cF81D016a#code)
+- `Mumbai Testnet` - [0xfa3c6782D022e9FD7e829CD160d04Cab817BA8B6](https://mumbai.polygonscan.com/address/0xfa3c6782D022e9FD7e829CD160d04Cab817BA8B6#code)
 
 ## Safety
 

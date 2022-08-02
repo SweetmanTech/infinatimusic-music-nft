@@ -2,9 +2,9 @@
 pragma solidity ^0.8.15;
 
 import "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol";
-import "onchain-music-metadata/contracts/Example/ExampleToken.sol";
+import "./KeepItHeady.sol";
 
-contract Album is ERC721Upgradeable, ExampleToken {
+contract Album is ERC721Upgradeable, KeepItHeady {
     // The tokenId of the token to be minted.
     uint256 private tokenId;
 
@@ -16,6 +16,8 @@ contract Album is ERC721Upgradeable, ExampleToken {
         __ERC721_init(name_, symbol_);
         setupSongMetadata();
         setupProjectMetadata();
+        setupCollaborators();
+        setupTags();
         mint(_originalHolder);
     }
 

@@ -5,8 +5,8 @@ async function main() {
   const Album = await hre.ethers.getContractFactory("Album");
 
   const implementation = await hre.upgrades.deployProxy(Album, [
-    "Music NFT",
-    "music",
+    "Keep it Heady",
+    "KiH",
     "0xcfBf34d385EA2d5Eb947063b67eA226dcDA3DC38",
   ]);
 
