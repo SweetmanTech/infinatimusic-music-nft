@@ -3,7 +3,7 @@ pragma solidity ^0.8.15;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "./Single.sol";
-import "./ZoraAsks.sol";
+import "./ZoraV3/ZoraAsks.sol";
 
 contract KeepItHeady is ERC721Enumerable, Single, ZoraAsks {
     constructor(
