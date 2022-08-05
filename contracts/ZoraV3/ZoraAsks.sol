@@ -30,11 +30,12 @@ contract ZoraAsks {
     }
 
     /// @notice Creates the ask for a given NFT using Zora V3 Module (Asks V1.1)
-    function createAsk() public {
+    /// @param _tokenId the tokenId to list for sale
+    function _createAsk(uint256 _tokenId) internal {
         IAsksV1_1(zoraAsksV1_1).createAsk(
             address(this),
-            1,
-            1,
+            _tokenId,
+            11100000000000000, // 0.0111 ETH
             address(0),
             sellerFundsRecipient,
             1000
