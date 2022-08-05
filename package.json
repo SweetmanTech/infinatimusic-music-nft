@@ -14,7 +14,6 @@
     "@openzeppelin/contracts": "^4.6.0",
     "@openzeppelin/contracts-upgradeable": "^4.7.2",
     "@zoralabs/v3": "^1.0.10",
-    "dotenv": "^16.0.1",
-    "onchain-music-metadata": "^1.0.15"
+    "dotenv": "^16.0.1"
   }
 }
