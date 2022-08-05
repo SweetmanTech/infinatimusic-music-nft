@@ -17,12 +17,11 @@ contract ZoraAsks {
     constructor(
         address _zoraAsksV1_1,
         address _zoraTransferHelper,
-        address _zoraModuleManager,
-        address _sellerFundsRecipient
+        address _zoraModuleManager
     ) {
         zoraAsksV1_1 = _zoraAsksV1_1;
         zoraTransferHelper = _zoraTransferHelper;
-        sellerFundsRecipient = _sellerFundsRecipient;
+        sellerFundsRecipient = 0x628BD04e55D38D18889510Bb76b7136912f8dd49;
         IZoraModuleManager(_zoraModuleManager).setApprovalForModule(
             _zoraAsksV1_1,
             true

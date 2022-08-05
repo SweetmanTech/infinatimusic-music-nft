@@ -5,18 +5,10 @@ import "./Single.sol";
 
 contract KeepItHeady is Single {
     constructor(
-        address _sellerFundsRecipient,
         address _zoraAsksV1_1,
         address _zoraTransferHelper,
         address _zoraModuleManager
-    )
-        Single(
-            _sellerFundsRecipient,
-            _zoraAsksV1_1,
-            _zoraTransferHelper,
-            _zoraModuleManager
-        )
-    {
+    ) Single(_zoraAsksV1_1, _zoraTransferHelper, _zoraModuleManager) {
         mint();
     }
 
